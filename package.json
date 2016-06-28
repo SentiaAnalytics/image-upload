@@ -1,0 +1,35 @@
+{
+  "name": "image-upload",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "oolon-livetape src/*.test.ls | tap-spec",
+    "test:watch": "oolon-livetape -w src/*.test.ls | tap-spec",
+    "start": "lsc src/main.ls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SentiaAnalytics/image-upload.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SentiaAnalytics/image-upload/issues"
+  },
+  "homepage": "https://github.com/SentiaAnalytics/image-upload#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "livescript": "^1.5.0",
+    "oolon-livetape": "^1.0.2",
+    "ramda": "^0.21.0",
+    "sentia-logger": "^3.0.1",
+    "tap-spec": "^4.1.1",
+    "temp": "^0.8.3",
+    "mkdirp": "^0.5.1"
+  },
+  "devDependencies": {
+    "sinon": "^1.17.4",
+    "tape": "^4.6.0"
+  }
+}
