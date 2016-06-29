@@ -24,12 +24,10 @@ export writeFile = (filepath, inputStream) -->
       .on 'error', reject
 
 createFolder = (folderpath) ->
-  console.log 'PATH', folderpath
   new Promise (resolve, reject) ->
     mkdirp folderpath, (err) -> if err then reject err else resolve folderpath
 
 export writeFileToFolder = (inputStream, folder, filename) -->
   createFolder folder
     .then (folderPath) ->
-      console.log 'FOLDER', path.join, folderPath, filename
       writeFile (path.join folderPath, filename), inputStream

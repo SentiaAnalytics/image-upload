@@ -1,0 +1,4 @@
+node_modules/
+nom-debug.log
+env
+public/files/test/
