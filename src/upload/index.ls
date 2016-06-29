@@ -5,7 +5,7 @@ path = require 'path'
 fs = require 'fs'
 log = require '../logger'
 PORT = process.env.PORT
-ROOT_FOLDER = path.join __dirname, '../../public/files'
+ROOT_FOLDER = '/sentia/files'
 CONTENT_DISPOSITION_ERROR = """
   Invalid Content-Disposition header
   please ensure that you include a Content-Disposition header on the form: 'attachment; filename="<name>.jpg"'

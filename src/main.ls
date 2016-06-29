@@ -8,7 +8,7 @@ app.use (req, res, next) ->
   console.log "REQUEST"
   next!
 
-app.use express.static 'public'
+app.use express.static '/sentia'
 
 app.get '/', (req, res) ->
   res.send """
